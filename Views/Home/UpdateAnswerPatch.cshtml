@@ -1,0 +1,17 @@
+﻿@model Answer
+@{ Layout = "_Layout"; ViewBag.Title = "Update an Answer from PATCH request";}
+
+<h2>Update an Answer from Patch request<a asp-action="Index" class="btn btn-sm btn-secondary">Back</a></h2>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Body"></label>
+        <input class="form-control" asp-for="Body" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Accepted"></label>
+        <input class="form-control" asp-for="Accepted" />
+    </div>
+    <div class="text-center panel-body">
+        <button type="submit" class="btn btn-sm btn-primary">Update</button>
+    </div>
+</form>
